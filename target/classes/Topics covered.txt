@@ -1,0 +1,54 @@
+Topic1:-
+Demo1:
+1. Construction injection
+2. Setter Injection
+3. Application Context
+4. Autowire with xml
+5. Constructor injection based on type, name, index
+6. Bean scope (singleton and prototype) : by default all beans scope are singleton
+7. Component Scan ( <context:component-scan base-package=""/> )
+
+Topic2:-
+Demo1:
+1. Null injection in xml
+2. Import resource tag ( <import resource=""/> )
+3. Collection injection (covered: List, Map uncovered: Set, Properties)
+4. Bean inheritance (covered: parent uncovered: abstract)
+
+Topic3:-
+Demo1:
+1. Spring Expression Language (${} (for taking up values from application.properties - covered) and #{} (for evaluating java expression - not covered))
+2. Expression language in application context to load values from properties file to xml.
+
+Demo2:
+3. Annotations (few not covered in the demo):-
+    1. @Configuration
+    2. @Component - (by default, spring scans for Component classes in base package where configuration class is present and its sub-packages.)
+    3. @Repository
+    4. @Service
+    5. @Controller
+    6. @Autowired
+    7. @Qualifier
+    8. @Scope
+    9. @Bean
+    10. @DependsOn
+    11. @Lazy
+    12. @Value
+    13. @ComponentScan
+    14. @PropertySource
+    15. @Primary
+    16. @PostConstruct
+    17. @PreDestroy
+
+    @ConfigurationProperties
+    @SpringBootApplication
+    @ImportResource
+
+
+Uncovered Topics:-
+1. Collection merging
+2. Internalization in Spring
+3. Pnamespace, Cnamespace
+4. @Import annotation
+5. <context:annotation-config> tag
+

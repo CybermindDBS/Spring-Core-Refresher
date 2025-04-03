@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--For Demo1-->
+    <context:component-scan base-package="org.example.topic1"/>
+
+    <bean id="str1" class="java.lang.String" autowire-candidate="false">
+        <constructor-arg value="sample"/>
+    </bean>
+<!--    'primary = true' to solve ambiguity problem while autowiring-->
+    <bean id="str2" class="java.lang.String" primary="true"  autowire-candidate="true">
+        <constructor-arg value="string"/>
+    </bean>
+
+<!--    autowiring the second constructor argument based on Type (str2 will be autowired) -->
+    <bean id="bean1" class="org.example.topic1.Data" scope="prototype" autowire="byType">
+        <constructor-arg  ref="str1" type="java.lang.String" name="val1" index="0"/>
+        <property name="n" value="9"/>
+    </bean>
+<!--  end  -->
+
+</beans>

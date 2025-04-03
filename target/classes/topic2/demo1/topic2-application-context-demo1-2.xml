@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+<!--    injecting a null-->
+<!--    Collection injection-->
+    <bean id="bean1" class="org.example.topic2.Data">
+        <property name="str"><null/></property>
+
+        <property name="list">
+            <list>
+                <value>1</value>
+                <value>2</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="value1"/>
+                <entry key="2" value="value2"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="bean2" class="org.example.topic2.Data2" parent="bean1">
+        <property name="val" value="999"/>
+    </bean>
+</beans>

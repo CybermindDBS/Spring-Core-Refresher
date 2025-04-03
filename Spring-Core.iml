@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/application-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/topic1-application-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/topic2-application-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/topic2-application-context-2.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/topic2.demo2/topic2-application-context-demo2.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/topic2/demo2/topic2-application-context-demo2.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/topic3/demo1/topic3-application-context-demo1.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/topic3/demo2/topic3-application-context-demo2.xml</file>
+        </fileset>
+        <fileset id="fileset2" name="Spring Application Context" removed="false">
+          <dependency>fileset</dependency>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>
